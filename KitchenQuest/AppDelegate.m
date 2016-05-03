@@ -31,6 +31,17 @@
     //[[UITabBar appearance] setSelectionIndicatorImage:whiteBackground];
     [[UITabBar appearance] setTintColor:[UIColor colorWithRed:0.34 green:0.74 blue:0.94 alpha:1.0]];
     
+    
+    // Configure tracker from GoogleService-Info.plist.
+    NSError *configureError;
+    [[GGLContext sharedInstance] configureWithError:&configureError];
+    NSAssert(!configureError, @"Error configuring Google services: %@", configureError);
+    
+    // Optional: configure GAI options.
+    GAI *gai = [GAI sharedInstance];
+    gai.trackUncaughtExceptions = YES;  // report uncaught exceptions
+    gai.logger.logLevel = kGAILogLevelVerbose;  // remove before app release
+
     return YES;
 }
 

@@ -13,6 +13,8 @@
 #import "User.h"
 #import "IngredientCollectionViewCell.h"
 #import "SavedRecipesViewController.h"
+#import <Google/Analytics.h>
+
 
 @import QuartzCore;
 
@@ -74,6 +76,9 @@ CGFloat const kCellHeight = 40;
     
     self.ingredientCollectionView.backgroundColor = [UIColor clearColor];
     
+    id<GAITracker> tracker = [[GAI sharedInstance] defaultTracker];
+    [tracker set:kGAIScreenName value:@"Ingredients"];
+    [tracker send:[[GAIDictionaryBuilder createScreenView] build]];
     
 }
 
