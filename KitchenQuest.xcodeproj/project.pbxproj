@@ -47,9 +47,11 @@
 		58B5BBFC1C1F730E00DF72F6 /* RecipeInformation.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B5BBFB1C1F730E00DF72F6 /* RecipeInformation.m */; };
 		58E9B82E1C20EBEB00027602 /* RecipeResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58E9B82D1C20EBEB00027602 /* RecipeResultsViewController.m */; };
 		58E9B8311C20F37D00027602 /* SavedRecipesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58E9B8301C20F37D00027602 /* SavedRecipesViewController.m */; };
+		6D1C60BD9B2EFF185E74565D /* libPods-KitchenQuest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A85E67C46D26CF020495F308 /* libPods-KitchenQuest.a */; };
 		B7F0C84E1C1F88FF00259A6A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7F0C84D1C1F88FF00259A6A /* QuartzCore.framework */; };
 		B7F0C8511C1FB14800259A6A /* IngredientCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B7F0C8501C1FB14800259A6A /* IngredientCollectionViewCell.m */; };
 		B7F0C8571C20C5D100259A6A /* SeachIngredientsCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7F0C8561C20C5D100259A6A /* SeachIngredientsCollectionViewController.m */; };
+		C8A1AA4F1CD95F8A0064B7BC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C8A1AA4E1CD95F8A0064B7BC /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +68,7 @@
 		1AD3C9CF1C1F98B900B2390C /* food.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = food.png; sourceTree = "<group>"; };
 		1AD3C9D11C1FA93800B2390C /* ImageFetcherService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageFetcherService.h; sourceTree = "<group>"; };
 		1AD3C9D21C1FA93800B2390C /* ImageFetcherService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageFetcherService.m; sourceTree = "<group>"; };
+		257D959C09CE9C39F4E8433E /* Pods-KitchenQuest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KitchenQuest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KitchenQuest/Pods-KitchenQuest.debug.xcconfig"; sourceTree = "<group>"; };
 		581648C11C1F7A9F004231B5 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		581648C21C1F7A9F004231B5 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
 		581648C41C1FE847004231B5 /* RecipeWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecipeWebViewController.h; sourceTree = "<group>"; };
@@ -111,11 +114,13 @@
 		58E9B82F1C20F37C00027602 /* SavedRecipesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SavedRecipesViewController.h; sourceTree = "<group>"; };
 		58E9B8301C20F37D00027602 /* SavedRecipesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SavedRecipesViewController.m; sourceTree = "<group>"; };
 		58E9B8321C21CB4F00027602 /* KitchenQuest 1.1.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "KitchenQuest 1.1.xcdatamodel"; sourceTree = "<group>"; };
+		A85E67C46D26CF020495F308 /* libPods-KitchenQuest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KitchenQuest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7F0C84D1C1F88FF00259A6A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		B7F0C84F1C1FB14800259A6A /* IngredientCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IngredientCollectionViewCell.h; sourceTree = "<group>"; };
 		B7F0C8501C1FB14800259A6A /* IngredientCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IngredientCollectionViewCell.m; sourceTree = "<group>"; };
 		B7F0C8551C20C5D100259A6A /* SeachIngredientsCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SeachIngredientsCollectionViewController.h; sourceTree = "<group>"; };
 		B7F0C8561C20C5D100259A6A /* SeachIngredientsCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SeachIngredientsCollectionViewController.m; sourceTree = "<group>"; };
+		C8A1AA4E1CD95F8A0064B7BC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,12 +129,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				B7F0C84E1C1F88FF00259A6A /* QuartzCore.framework in Frameworks */,
+				6D1C60BD9B2EFF185E74565D /* libPods-KitchenQuest.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		47A0D1A3003969D5B01BEE50 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				257D959C09CE9C39F4E8433E /* Pods-KitchenQuest.debug.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		581648C71C20DB5F004231B5 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -167,6 +181,8 @@
 				1A81690C1C20BA5E0006730B /* Model.m */,
 				584F880F1C1F3E05007C30FA /* KitchenQuest */,
 				584F880E1C1F3E05007C30FA /* Products */,
+				47A0D1A3003969D5B01BEE50 /* Pods */,
+				F9E0548E749AC7765943E1AF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -190,6 +206,7 @@
 				581648C71C20DB5F004231B5 /* View */,
 				584F881F1C1F3E05007C30FA /* Assets.xcassets */,
 				584F88241C1F3E05007C30FA /* Info.plist */,
+				C8A1AA4E1CD95F8A0064B7BC /* GoogleService-Info.plist */,
 				584F881C1C1F3E05007C30FA /* KitchenQuest.xcdatamodeld */,
 				584F88101C1F3E05007C30FA /* Supporting Files */,
 			);
@@ -255,6 +272,14 @@
 			name = CoreDataEntities;
 			sourceTree = "<group>";
 		};
+		F9E0548E749AC7765943E1AF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A85E67C46D26CF020495F308 /* libPods-KitchenQuest.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -262,9 +287,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 584F88271C1F3E05007C30FA /* Build configuration list for PBXNativeTarget "KitchenQuest" */;
 			buildPhases = (
+				F2A8DA30ED275EA446018B18 /* Check Pods Manifest.lock */,
 				584F88091C1F3E05007C30FA /* Sources */,
 				584F880A1C1F3E05007C30FA /* Frameworks */,
 				584F880B1C1F3E05007C30FA /* Resources */,
+				92A97B8B768C3111012AA3AB /* Embed Pods Frameworks */,
+				4232EC010C2B095E755CBB53 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -329,6 +357,7 @@
 				1ABD1F4B1C1F4F9E001D6918 /* KitchenTableViewCell.xib in Resources */,
 				1AD3C9CA1C1F6F8E00B2390C /* 0218-star-full (1).png in Resources */,
 				582E462E1C232297006B7C8D /* heartFill.png in Resources */,
+				C8A1AA4F1CD95F8A0064B7BC /* GoogleService-Info.plist in Resources */,
 				58B5BBF31C1F47EA00DF72F6 /* testData.json in Resources */,
 				1AD3C9C81C1F6F7F00B2390C /* 0216-star-empty.png in Resources */,
 				1A79885E1C20D85F002582F5 /* Main.storyboard in Resources */,
@@ -339,6 +368,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4232EC010C2B095E755CBB53 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KitchenQuest/Pods-KitchenQuest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		92A97B8B768C3111012AA3AB /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KitchenQuest/Pods-KitchenQuest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F2A8DA30ED275EA446018B18 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		584F88091C1F3E05007C30FA /* Sources */ = {
@@ -463,12 +540,13 @@
 		};
 		584F88281C1F3E05007C30FA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 257D959C09CE9C39F4E8433E /* Pods-KitchenQuest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = KitchenQuest/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.william-cremin.KitchenQuest";
+				PRODUCT_BUNDLE_IDENTIFIER = com.theheidiyee.KitchenQuest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -480,7 +558,7 @@
 				INFOPLIST_FILE = KitchenQuest/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.william-cremin.KitchenQuest";
+				PRODUCT_BUNDLE_IDENTIFIER = com.theheidiyee.KitchenQuest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
