@@ -8,12 +8,14 @@
 
 #import <UIKit/UIKit.h>
 #import <CoreData/CoreData.h>
-#import <Google/Analytics.h>
+#import "TAGContainerOpener.h"
+
+
 
 @class TAGManager;
 @class TAGContainer;
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface AppDelegate : UIResponder <UIApplicationDelegate, TAGContainerOpenerNotifier>
 
 @property (strong, nonatomic) UIWindow *window;
 @property (strong, nonatomic) TAGManager *tagManager;

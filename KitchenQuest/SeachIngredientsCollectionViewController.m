@@ -13,6 +13,9 @@
 #import "User.h"
 #import "IngredientCollectionViewCell.h"
 #import "SavedRecipesViewController.h"
+#import "TAGDataLayer.h"
+#import "TAGManager.h"
+#import "AppDelegate.h"
 
 
 @import QuartzCore;
@@ -75,9 +78,14 @@ CGFloat const kCellHeight = 40;
     
     self.ingredientCollectionView.backgroundColor = [UIColor clearColor];
     
-    id<GAITracker> tracker = [[GAI sharedInstance] defaultTracker];
-    [tracker set:kGAIScreenName value:@"Ingredients"];
-    [tracker send:[[GAIDictionaryBuilder createScreenView] build]];
+//    AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+//    TAGContainer *container = appDelegate.container;
+//    
+//    // Get the configuration value by key.
+//    NSString *title = [container stringForKey:@"title_string"];
+    
+
+    
     
 }
 
@@ -87,6 +95,25 @@ CGFloat const kCellHeight = 40;
     [[NSNotificationCenter defaultCenter] addObserver:self  selector:@selector(orientationChanged)  name:UIDeviceOrientationDidChangeNotification  object:nil];
     
     //NSNotificationCenter.defaultCenter().addObserver(self, selector: "orientationChanged:", name: UIDeviceOrientationDidChangeNotification, object: nil)
+    
+
+
+}
+
+-(void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    
+
+    NSLog(@"push");
+    
+    [[NSOperationQueue mainQueue] addOperationWithBlock:^ {
+        NSLog(@"BAM");
+        TAGDataLayer *dataLayer = [TAGManager instance].dataLayer;
+        [dataLayer push:@{@"event": @"screenView", @"screenName": @"Home Screen"}];
+    }];
+
+
+    
 
 }
 

@@ -9,6 +9,10 @@
 #import "AppDelegate.h"
 #import "CoreDataStack.h"
 #import "Recipe.h"
+#import "TAGContainer.h"
+#import "TAGDataLayer.h"
+#import "TAGManager.h"
+
 
 @interface AppDelegate ()
 
@@ -29,20 +33,39 @@
     
     //UIImage *whiteBackground = [UIImage imageNamed:@"bluebackground"];
     //[[UITabBar appearance] setSelectionIndicatorImage:whiteBackground];
+    
+    self.tagManager = [TAGManager instance];
+    [self.tagManager.logger setLogLevel:kTAGLoggerLogLevelVerbose];
+
+
+    
+//    NSURL *url = [launchOptions valueForKey:UIApplicationLaunchOptionsURLKey];
+//    if (url != nil) {
+//        [self.tagManager previewWithUrl:url];
+//    }
+    
+    [TAGContainerOpener openContainerWithId:@"GTM-PDMLBF"   // Update with your Container ID.
+                                 tagManager:self.tagManager
+                                   openType:kTAGOpenTypePreferFresh
+                                    timeout:nil
+                                   notifier:self];
+    
     [[UITabBar appearance] setTintColor:[UIColor colorWithRed:0.34 green:0.74 blue:0.94 alpha:1.0]];
     
     
-    // Configure tracker from GoogleService-Info.plist.
-    NSError *configureError;
-    [[GGLContext sharedInstance] configureWithError:&configureError];
-    NSAssert(!configureError, @"Error configuring Google services: %@", configureError);
-    
-    // Optional: configure GAI options.
-    GAI *gai = [GAI sharedInstance];
-    gai.trackUncaughtExceptions = YES;  // report uncaught exceptions
-    gai.logger.logLevel = kGAILogLevelVerbose;  // remove before app release
+
 
     return YES;
+}
+
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
+    
+    if ([self.tagManager previewWithUrl:url]) {
+        return YES;
+    }
+    
+    // Code to handle other urls.
+    return NO;
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application {
@@ -77,6 +100,18 @@
             NSLog(@"%@", saveError.localizedDescription);
         }
     }
+}
+
+// TAGContainerOpenerNotifier callback.
+- (void)containerAvailable:(TAGContainer *)container {
+    // Note that containerAvailable may be called on any thread, so you may need to dispatch back to
+    // your main thread.
+    dispatch_async(dispatch_get_main_queue(), ^{
+        NSLog(@"refreshed");
+        self.container = container;
+        [self.container refresh];
+    });
+
 }
 
 @end
