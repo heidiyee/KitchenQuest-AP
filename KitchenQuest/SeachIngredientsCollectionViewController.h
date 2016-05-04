@@ -7,6 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Google/Analytics.h>
+
 
 @interface SeachIngredientsCollectionViewController : UIViewController
 

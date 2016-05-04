@@ -13,7 +13,6 @@
 #import "User.h"
 #import "IngredientCollectionViewCell.h"
 #import "SavedRecipesViewController.h"
-#import <Google/Analytics.h>
 
 
 @import QuartzCore;
