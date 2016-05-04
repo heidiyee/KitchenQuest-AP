@@ -52,6 +52,12 @@
 		B7F0C8511C1FB14800259A6A /* IngredientCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B7F0C8501C1FB14800259A6A /* IngredientCollectionViewCell.m */; };
 		B7F0C8571C20C5D100259A6A /* SeachIngredientsCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7F0C8561C20C5D100259A6A /* SeachIngredientsCollectionViewController.m */; };
 		C8A1AA4F1CD95F8A0064B7BC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C8A1AA4E1CD95F8A0064B7BC /* GoogleService-Info.plist */; };
+		C8A1AA511CD96F540064B7BC /* libGoogleAnalyticsServices.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C8A1AA501CD96F540064B7BC /* libGoogleAnalyticsServices.a */; };
+		C8A1AA531CD96F680064B7BC /* Library in Resources */ = {isa = PBXBuildFile; fileRef = C8A1AA521CD96F680064B7BC /* Library */; };
+		C8A1AA551CD96F830064B7BC /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8A1AA541CD96F830064B7BC /* CoreData.framework */; };
+		C8A1AA571CD96F910064B7BC /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8A1AA561CD96F910064B7BC /* SystemConfiguration.framework */; };
+		C8A1AA5D1CD970540064B7BC /* libz.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C8A1AA5C1CD970540064B7BC /* libz.1.dylib */; };
+		C8A1AA5F1CD970940064B7BC /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C8A1AA5E1CD970940064B7BC /* libsqlite3.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,7 +74,6 @@
 		1AD3C9CF1C1F98B900B2390C /* food.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = food.png; sourceTree = "<group>"; };
 		1AD3C9D11C1FA93800B2390C /* ImageFetcherService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageFetcherService.h; sourceTree = "<group>"; };
 		1AD3C9D21C1FA93800B2390C /* ImageFetcherService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageFetcherService.m; sourceTree = "<group>"; };
-		257D959C09CE9C39F4E8433E /* Pods-KitchenQuest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KitchenQuest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KitchenQuest/Pods-KitchenQuest.debug.xcconfig"; sourceTree = "<group>"; };
 		581648C11C1F7A9F004231B5 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		581648C21C1F7A9F004231B5 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
 		581648C41C1FE847004231B5 /* RecipeWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecipeWebViewController.h; sourceTree = "<group>"; };
@@ -121,6 +126,16 @@
 		B7F0C8551C20C5D100259A6A /* SeachIngredientsCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SeachIngredientsCollectionViewController.h; sourceTree = "<group>"; };
 		B7F0C8561C20C5D100259A6A /* SeachIngredientsCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SeachIngredientsCollectionViewController.m; sourceTree = "<group>"; };
 		C8A1AA4E1CD95F8A0064B7BC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C8A1AA501CD96F540064B7BC /* libGoogleAnalyticsServices.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGoogleAnalyticsServices.a; sourceTree = "<group>"; };
+		C8A1AA521CD96F680064B7BC /* Library */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Library; sourceTree = "<group>"; };
+		C8A1AA541CD96F830064B7BC /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		C8A1AA561CD96F910064B7BC /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		C8A1AA581CD96FBB0064B7BC /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		C8A1AA5A1CD96FC60064B7BC /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		C8A1AA5C1CD970540064B7BC /* libz.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.dylib; path = ../../../../usr/lib/libz.1.dylib; sourceTree = "<group>"; };
+		C8A1AA5E1CD970940064B7BC /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = ../../../../usr/lib/libsqlite3.dylib; sourceTree = "<group>"; };
+		C8A1AA601CD972850064B7BC /* GTM-PDMLBF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GTM-PDMLBF"; sourceTree = "<group>"; };
+		C8A1AA611CD9729E0064B7BC /* GTM-PDMLBF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GTM-PDMLBF"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,22 +143,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8A1AA5F1CD970940064B7BC /* libsqlite3.dylib in Frameworks */,
+				C8A1AA5D1CD970540064B7BC /* libz.1.dylib in Frameworks */,
+				C8A1AA571CD96F910064B7BC /* SystemConfiguration.framework in Frameworks */,
+				C8A1AA551CD96F830064B7BC /* CoreData.framework in Frameworks */,
 				B7F0C84E1C1F88FF00259A6A /* QuartzCore.framework in Frameworks */,
 				6D1C60BD9B2EFF185E74565D /* libPods-KitchenQuest.a in Frameworks */,
+				C8A1AA511CD96F540064B7BC /* libGoogleAnalyticsServices.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		47A0D1A3003969D5B01BEE50 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				257D959C09CE9C39F4E8433E /* Pods-KitchenQuest.debug.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		581648C71C20DB5F004231B5 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -176,12 +188,14 @@
 		584F88041C1F3E05007C30FA = {
 			isa = PBXGroup;
 			children = (
+				C8A1AA601CD972850064B7BC /* GTM-PDMLBF */,
+				C8A1AA521CD96F680064B7BC /* Library */,
+				C8A1AA501CD96F540064B7BC /* libGoogleAnalyticsServices.a */,
 				B7F0C84D1C1F88FF00259A6A /* QuartzCore.framework */,
 				1A81690B1C20BA5E0006730B /* Model.h */,
 				1A81690C1C20BA5E0006730B /* Model.m */,
 				584F880F1C1F3E05007C30FA /* KitchenQuest */,
 				584F880E1C1F3E05007C30FA /* Products */,
-				47A0D1A3003969D5B01BEE50 /* Pods */,
 				F9E0548E749AC7765943E1AF /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -236,6 +250,7 @@
 				1AD3C9CB1C1F6FA100B2390C /* 0219-heart.png */,
 				58B5BBF21C1F47EA00DF72F6 /* testData.json */,
 				584F88111C1F3E05007C30FA /* main.m */,
+				C8A1AA611CD9729E0064B7BC /* GTM-PDMLBF */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -275,6 +290,12 @@
 		F9E0548E749AC7765943E1AF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C8A1AA5E1CD970940064B7BC /* libsqlite3.dylib */,
+				C8A1AA5C1CD970540064B7BC /* libz.1.dylib */,
+				C8A1AA5A1CD96FC60064B7BC /* libz.tbd */,
+				C8A1AA581CD96FBB0064B7BC /* libsqlite3.tbd */,
+				C8A1AA561CD96F910064B7BC /* SystemConfiguration.framework */,
+				C8A1AA541CD96F830064B7BC /* CoreData.framework */,
 				A85E67C46D26CF020495F308 /* libPods-KitchenQuest.a */,
 			);
 			name = Frameworks;
@@ -359,6 +380,7 @@
 				582E462E1C232297006B7C8D /* heartFill.png in Resources */,
 				C8A1AA4F1CD95F8A0064B7BC /* GoogleService-Info.plist in Resources */,
 				58B5BBF31C1F47EA00DF72F6 /* testData.json in Resources */,
+				C8A1AA531CD96F680064B7BC /* Library in Resources */,
 				1AD3C9C81C1F6F7F00B2390C /* 0216-star-empty.png in Resources */,
 				1A79885E1C20D85F002582F5 /* Main.storyboard in Resources */,
 				1AD3C9CE1C1F84FE00B2390C /* 120px-Simple_icon_time.svg.png in Resources */,
@@ -540,12 +562,15 @@
 		};
 		584F88281C1F3E05007C30FA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 257D959C09CE9C39F4E8433E /* Pods-KitchenQuest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = KitchenQuest/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.theheidiyee.KitchenQuest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -558,6 +583,10 @@
 				INFOPLIST_FILE = KitchenQuest/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.theheidiyee.KitchenQuest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
